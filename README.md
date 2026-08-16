@@ -29,9 +29,11 @@ All ten tested plugins installed successfully and shipped purpose-consistent cod
 
 Also documented: 6 entries listed in community directories whose repos have vanished (installability reminder), 4 reproducible install frictions (pnpm 9 workspace-root check, git-protocol interception, registry timeouts, allowBuilds), and our own scanner false-positive corrections — kept in the record on purpose.
 
-## Guides (Chinese-first, English versions planned)
+## Guides (bilingual)
 
-[guides/01-quickstart.md](guides/01-quickstart.md) · [guides/02-first-plugin.md](guides/02-first-plugin.md) · [guides/03-pitfalls.md](guides/03-pitfalls.md)
+- Quickstart: [中文](guides/01-quickstart.md) · [EN](guides/01-quickstart.en.md)
+- Write your first plugin: [中文](guides/02-first-plugin.md) · [EN](guides/02-first-plugin.en.md)
+- Pitfalls: [中文](guides/03-pitfalls.md) · [EN](guides/03-pitfalls.en.md)
 
 ## Roadmap
 

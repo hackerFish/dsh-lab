@@ -51,11 +51,11 @@
 
 ---
 
-## 中文指南（原创）
+## 指南（双语 / Bilingual guides）
 
-- [guides/01-quickstart.md](guides/01-quickstart.md) — 5 分钟上手：安装、profile 与 DSH_HOME 是什么
-- [guides/02-first-plugin.md](guides/02-first-plugin.md) — 从零写并发布你的第一个插件
-- [guides/03-pitfalls.md](guides/03-pitfalls.md) — 装插件之前的权限认知与常见翻车点
+- [01-quickstart.md](guides/01-quickstart.md) · [EN](guides/01-quickstart.en.md) — 5 分钟上手：安装、profile 与 DSH_HOME 是什么
+- [02-first-plugin.md](guides/02-first-plugin.md) · [EN](guides/02-first-plugin.en.md) — 从零写并发布你的第一个插件
+- [03-pitfalls.md](guides/03-pitfalls.md) · [EN](guides/03-pitfalls.en.md) — 装插件之前的权限认知与常见翻车点
 
 ---
 
