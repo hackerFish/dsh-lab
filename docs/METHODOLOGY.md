@@ -42,7 +42,7 @@ dsh plugin --profile web add <本地目录>         # 本地目录（调试用�
 1. **pnpm 9 的 workspace-root 检查**：`dsh plugin add` 会因 `ERR_PNPM_ADDING_TO_ROOT` 失败。解法：追加 `--ignore-workspace-root-check`，或设置环境变量 `npm_config_ignore_workspace_root_check=true`。若报告未声明用了该解法，说明默认命令即成功。
 2. **git 协议可达性**：`github:` 直装依赖本机 git 走 `git+ssh`/`git+https`。在 git 网络被拦截的环境（SSL 主体名不匹配等），可改用 codeload tarball 直链：`dsh plugin --profile web add https://codeload.github.com/<owner>/<repo>/tar.gz/HEAD`。
 3. **registry 可达性**：依赖树较大的插件直连 `registry.npmjs.org` 可能超时。可用镜像：`export npm_config_registry=https://registry.npmmirror.com`。
-4. **prepare 构建脚本**：git/tarball 安装时 pnpm 默认拦截 `prepare` 脚本，需要按 pnpm 提示在 profile 的 `pnpm-workspace.yaml` 的 `allowBuilds` 下放行。报告会如实记录这一步。
+4. **prepare 构建脚本**：git/tarball 安装时 pnpm 默认拦截 `prepare` 脚本，需要按 pnpm 提示在 profile 的 `pnpm-workspace.yaml` 的 `allowBuilds` 下放行。报告会把这一步原样记下来。
 
 **每份报告必须**：附完整安装日志（脱敏后）与最终 `dependencies` 行。
 
