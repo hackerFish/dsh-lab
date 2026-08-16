@@ -50,7 +50,7 @@ Phase 1 tested curation → Phase 2 plugin×DSH compatibility matrix (CI) → Ph
 
 - [awesome-dsh-skills](https://github.com/hackerFish/awesome-dsh-skills) — tested skills (SKILL.md)
 - [awesome-dsh-presets](https://github.com/hackerFish/awesome-dsh-presets) — tested presets & rules
-- [dsh-video-studio](https://github.com/hackerFish/dsh-video-studio) — AI video/motion-comic plugin (Whale)
+- [dsh-video-studio](https://github.com/hackerFish/dsh-video-studio) — AI video/motion-comic plugin (Whale): 7-stage pipeline, multi-account quota pool with backoff/fallback, credential vault, kling lip-sync adapter, 5-genre preset pack, 101 unit tests
 
 ## Disclaimer
 
