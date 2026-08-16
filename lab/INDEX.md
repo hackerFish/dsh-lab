@@ -5,9 +5,9 @@
 
 **状态图例 / Legend**：✅ 通过 passed · ❌ 未通过 failed（附原因 with reason） · ⏳ 未执行 not run（附原因 with reason）
 
-**测试环境 / Env**：DSH 0.1.0-rc.6 · pnpm 9.15.4 · node 24.3.0 · macOS · 首轮 2026-08-16，第二批 2026-08-17
+**测试环境 / Env**：DSH 0.1.0-rc.6 · pnpm 9.15.4 · node 24.3.0 · macOS · 首轮 2026-08-16，第二批 2026-08-17，第三批 2026-08-17
 
-## 通过 / Passed（26 份）
+## 通过 / Passed（50 份）
 
 | 插件 | 分类 | 来源 | 版本 | 安装 | 冒烟 | 快检 | 结论 | 报告 |
 |---|---|---|---|---|---|---|---|---|
@@ -37,8 +37,32 @@
 | dsh-trajectory-reader | 会话 | github flyingtimes | 0.2.5 | ✅ | ⏳ | 读轨迹文件，属功能本身 | ✅ 推荐 | [reports/dsh-trajectory-reader.md](reports/dsh-trajectory-reader.md) |
 | dsh-undo-plugin | UI | github lire1131 | 0.3.4 | ✅ | ⏳ | 保存点读写 + 凭证读取属功能本身 | ✅ 推荐 | [reports/dsh-undo-plugin.md](reports/dsh-undo-plugin.md) |
 | dsh-web-archive | 数据 | github renat3u | 0.1.1 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-web-archive.md](reports/dsh-web-archive.md) |
+| dsh-balance-meter | 计费 | github Ghost011118 | 0.1.0 | ✅ | ⏳ | 凭据仅本机读取，fetch 官方余额接口+自有路由 | ✅ 推荐 | [reports/dsh-balance-meter.md](reports/dsh-balance-meter.md) |
+| dsh-cost-meter-s | 计费 | github Sttrevens | 0.1.0-rc.2 | ✅ | ⏳ | 写默认价格表，属功能本身 | ✅ 推荐 | [reports/dsh-cost-meter-s.md](reports/dsh-cost-meter-s.md) |
+| dsh-cost-meter-h | 计费 | github Han-1413141 | 1.3.1 | ✅ | ⏳ | fetch 官方配额/余额/价格接口，无第三方 | ✅ 推荐 | [reports/dsh-cost-meter-h.md](reports/dsh-cost-meter-h.md) |
+| dsh-opencodego-usage | 计费 | github BeiZi6 | 0.1.0 | ✅ | ⏳ | curl 官方配额 API，带凭据头无 shell 拼接 | ✅ 推荐 | [reports/dsh-opencodego-usage.md](reports/dsh-opencodego-usage.md) |
+| dsh-opencode-go-usage | 计费 | github v587d | 0.1.1 | ✅ | ⏳ | 配置 0600 权限原子写，安全正向 | ✅ 推荐 | [reports/dsh-opencode-go-usage.md](reports/dsh-opencode-go-usage.md) |
+| dsh-mnemon | 记忆 | github omdsh-dev | 0.1.6 | ✅ | ⏳ | 仅 README 命中，代码无凭证处理 | ✅ 推荐 | [reports/dsh-mnemon.md](reports/dsh-mnemon.md) |
+| dsh-memory-jesse | 记忆 | github Jesse-njx | 0.1.0 | ✅ | ⏳ | 仅 README 命中 | ✅ 推荐 | [reports/dsh-memory-jesse.md](reports/dsh-memory-jesse.md) |
+| dsh-file-memory | 记忆 | github ICCuse | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-file-memory.md](reports/dsh-file-memory.md) |
+| dsh-knowledge | 记忆 | github ICCuse | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-knowledge.md](reports/dsh-knowledge.md) |
+| dsh-mneme | 记忆 | github modusensus | 0.3.7 | ✅ | ⏳ | 密钥仅本机 SQLite；embedding 请求配置端点 | ✅ 推荐 | [reports/dsh-mneme.md](reports/dsh-mneme.md) |
+| dsh-shared-memory | 记忆 | github futongxu9-maker | 2.0.0 | ✅ | ⏳ | 自有路由 + 记忆文件读写 | ✅ 推荐 | [reports/dsh-shared-memory.md](reports/dsh-shared-memory.md) |
+| dsh-memory-meow | 记忆 | github Phant0Meow | 0.5.1 | ✅ | ⏳ | 仅 README 命中 | ✅ 推荐 | [reports/dsh-memory-meow.md](reports/dsh-memory-meow.md) |
+| dsh-skin | 主题 | github KinGao294 | 0.3.1 | ✅ | ⏳ | 仅 README 命中 | ✅ 推荐 | [reports/dsh-skin.md](reports/dsh-skin.md) |
+| dsh-skin-switcher | 主题 | github zhtx2024 | 0.2.1 | ✅ | ⏳ | 原子改写 cordis.patch.yml，属功能本身 | ✅ 推荐 | [reports/dsh-skin-switcher.md](reports/dsh-skin-switcher.md) |
+| dsh-theme-kit | 主题 | github ink5897 | 0.1.2 | ✅ | ⏳ | 媒体误扫已勘误（扫描器修 SKIP_EXTS） | ✅ 推荐 | [reports/dsh-theme-kit.md](reports/dsh-theme-kit.md) |
+| dsh-theme-plugin | 主题 | github BeiZi6 | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-theme-plugin.md](reports/dsh-theme-plugin.md) |
+| dsh-premium-themes | 主题 | github xiaoyanzi191 | 0.1.0 | ✅ | ⏳ | 自有路由 + 配置回调编译，功能本身 | ✅ 推荐 | [reports/dsh-premium-themes.md](reports/dsh-premium-themes.md) |
+| dsh-pi-tui | 工具 | github lqhl | 0.1.1 | ✅ | ⏳ | prepare 为 husky，无危险操作 | ✅ 推荐 | [reports/dsh-pi-tui.md](reports/dsh-pi-tui.md) |
+| dsh-bash-terminal | 工具 | github MAXeaglet | 0.3.14 | ✅ | ⏳ | 终端插件：node-pty 执行用户主动调用的命令 | ⚠️ 可用但注意（高危能力=功能本身） | [reports/dsh-bash-terminal.md](reports/dsh-bash-terminal.md) |
+| dsh-file-mentions | 文件 | github a903067276-rgb | 1.0.0 | ✅ | ⏳ | 自有路由 + open/explorer 打开文件 | ✅ 推荐 | [reports/dsh-file-mentions.md](reports/dsh-file-mentions.md) |
+| dsh-hud | UI | github a903067276-rgb | 1.0.0 | ✅ | ⏳ | 自有路由，同源请求 | ✅ 推荐 | [reports/dsh-hud.md](reports/dsh-hud.md) |
+| dsh-file-mount | 文件 | github acefun29 | 0.5.0 | ✅ | ⏳ | 挂载状态写 + 可写性探测，功能本身 | ✅ 推荐 | [reports/dsh-file-mount.md](reports/dsh-file-mount.md) |
+| dsh-file-uploads | 文件 | github l541402398 | 1.0.0 | ✅ | ⏳ | 自有路由 + 上传文件管理 | ✅ 推荐 | [reports/dsh-file-uploads.md](reports/dsh-file-uploads.md) |
+| dsh-chat-import | 会话 | github Nwflower | 0.5.1 | ✅ | ⏳ | zstd/git 解压导入 + 自有路由，功能本身 | ✅ 推荐 | [reports/dsh-chat-import.md](reports/dsh-chat-import.md) |
 
-## 本次未通过 / Failed this batch（10，全部带可复现原因）
+## 本次未通过 / Failed（12，全部带可复现原因）
 
 | 插件 | 来源 | 失败原因（详见报告） | 报告 |
 |---|---|---|---|
@@ -52,12 +76,14 @@
 | dsh-wash-calendar | github zimai233 | ❌ 同上 | [reports/dsh-wash-calendar.md](reports/dsh-wash-calendar.md) |
 | dsh-tool-git | github lxj808624 | ❌ prepare 脚本 `pnpm install` 报 "packages field missing or empty"（仓库自身配置） | [reports/dsh-tool-git.md](reports/dsh-tool-git.md) |
 | dsh-focus-chat | github dingyi222666 | ❌ prepare 需 yarn 构建，`tsdown@0.22.14` 要求 node ≥24.11（本机 24.3.0） | [reports/dsh-focus-chat.md](reports/dsh-focus-chat.md) |
+| dsh-scholar | github lzszq | ❌ 声明 workspace 依赖 `@dsh-scholar/research-client@workspace:^` 但发布包中不存在（发布不完整） | [reports/dsh-scholar.md](reports/dsh-scholar.md) |
+| dsh-TUI | github ccch1mneyyy | ❌ prepare 内 `pnpm install` 失败（根因在仓库自身构建步骤） | [reports/dsh-TUI.md](reports/dsh-TUI.md) |
 
 **目录失效条目**（社区目录收录但仓库已不存在，API+网页双通道确认，本轮新发现 7 个 `dsh-external/*`）：见 [reports/stale-entries.md](reports/stale-entries.md)。
 
 ## English Summary
 
-- **Coverage**: 26 passed / 10 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, second batch tested 2026-08-17.
+- **Coverage**: 50 passed / 12 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
 - **Key finding**: 8 plugins from the `omdsh-dev` family + `dsh-turn-navigator`/`dsh-wash-calendar` depend on `@deepseek-ai/dsh-type-meta`, which returns **404 on both registry.npmjs.org and npmmirror** (unpublished) — they cannot install today.
 - **Verdicts are point-in-time snapshots**; see [METHODOLOGY.en.md](../docs/METHODOLOGY.en.md).
 

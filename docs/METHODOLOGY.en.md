@@ -122,3 +122,10 @@ Each report lives at `lab/reports/<插件名>.md`, with fixed fields:
 - Reports only ever **describe what we actually did**. Gates not tested are marked ⏳, never speculation.
 - If a test result is affected by environmental factors (e.g., network), the report must record the environmental factor instead of blaming the plugin.
 - If you find a report error: open a reproduction inconsistency per [CONTRIBUTING.md](../CONTRIBUTING.md); we re-test, correct, and keep the erratum record.
+
+
+---
+
+## Scanner limitation addendum (2026-08-17)
+
+4. `SKIP_EXTS` does not include `.mp4` and other media extensions, so binary videos get read as text and produce noisy garbage "hits" (found 2026-08-17 in dsh-theme-kit's `wallpapers/*.mp4`; the scanner's extension list has been fixed).

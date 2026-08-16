@@ -19,7 +19,7 @@ const PATTERNS = {
 
 const MAX_LINE_LEN = 800
 const SKIP_DIRS = new Set(['.git', 'node_modules', 'assets', 'images', 'img'])
-const SKIP_EXTS = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.ico', '.woff', '.woff2', '.ttf', '.eot', '.svg', '.map', '.lock', '.sum'])
+const SKIP_EXTS = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp', '.ico', '.woff', '.woff2', '.ttf', '.eot', '.svg', '.map', '.lock', '.sum', '.mp4', '.mp3', '.wav', '.webm', '.mov', '.avi', '.mkv', '.zip', '.gz', '.tar', '.tgz', '.pdf', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx'])
 
 async function walk(dir, out = []) {
   let entries

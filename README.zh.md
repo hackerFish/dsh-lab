@@ -32,7 +32,7 @@
 
 ---
 
-## 当前实测覆盖（26 通过 + 10 失败已记录，2026-08-16/17，DSH 0.1.0-rc.6）
+## 当前实测覆盖（50 通过 + 12 失败已记录，2026-08-16/17，DSH 0.1.0-rc.6）
 
 **第一批（2026-08-16，10 份全通过）**：dsh-global-rules · dsh-mermaid · dsh-shortcuts · dsh-deeplink · dsh-navbar · dsh-spotlight · dsh-share · modlens · dsh-recommend · dsh-plugin-vetting —— 全部安装成功且代码行为与宣称一致。
 
@@ -42,7 +42,9 @@
 - ❌ 失败 10 个（均带可复现原因）：omdsh 系 6 个（dsh-toolkit + 5 个 tool-*）+ dsh-turn-navigator + dsh-wash-calendar 依赖**已撤包的 `@deepseek-ai/dsh-type-meta`**（npm 与 npmmirror 均 404）；dsh-tool-git 的 prepare 脚本自身配置损坏；dsh-focus-chat 构建需 node ≥24.11（测试机 24.3.0）
 - 📋 完整 26 行表格 + 失败清单见 **[lab/INDEX.md](lab/INDEX.md)**
 
-> 已发布 36 份实测报告（含完整日志与复现命令）；新增 7 个真失效条目（`dsh-external/*`，API+网页双通道 404 确认），早期 6 个"失效条目"误报及勘误见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
+**第三批（2026-08-17，24 通过 + 2 失败）**：计费 5（balance-meter/cost-meter×2/opencodego×2）、记忆 7（mnemon/memory-jesse/file-memory/knowledge/mneme/shared-memory/memory-meow）、主题 5（skin/skin-switcher/theme-kit/theme-plugin/premium-themes）、工具 2（pi-tui/bash-terminal）、文件 5（file-mentions/hud/file-mount/file-uploads/chat-import）；失败 2：dsh-scholar 发布包缺 workspace 依赖、dsh-TUI prepare 构建失败。扫描器媒体扩展名局限已修复（见方法论勘误）。
+
+> 已发布 62 份实测报告（含完整日志与复现命令）；新增 7 个真失效条目（`dsh-external/*`，API+网页双通道 404 确认），早期 6 个"失效条目"误报及勘误见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
 
 ---
 
