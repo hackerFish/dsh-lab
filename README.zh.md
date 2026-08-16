@@ -32,22 +32,17 @@
 
 ---
 
-## 当前实测覆盖
+## 当前实测覆盖（26 通过 + 10 失败已记录，2026-08-16/17，DSH 0.1.0-rc.6）
 
-| 插件 | 来源 | 插件版本 | 测试 DSH 版本 | 测试日期 | 安装 | 冒烟 | 快检 | 报告 |
-|---|---|---|---|---|---|---|---|---|
-| dsh-global-rules | npm | 0.1.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与宣称一致 | [报告](lab/reports/dsh-global-rules.md) |
-| dsh-mermaid | github AKS1st | 0.4.2 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 命中均有合理解释 | [报告](lab/reports/dsh-mermaid.md) |
-| dsh-shortcuts | github Ricketts-Guo | 1.1.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 注意 install.sh | [报告](lab/reports/dsh-shortcuts.md) |
-| dsh-deeplink | github qyw233 | 0.5.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 代码零命中 | [报告](lab/reports/dsh-deeplink.md) |
-| dsh-navbar | github vlln | 0.3.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 11 文件零命中 | [报告](lab/reports/dsh-navbar.md) |
-| dsh-spotlight | github 0xsline | 0.0.2 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 运行代码无命中 | [报告](lab/reports/dsh-spotlight.md) |
-| dsh-share | github zljr | 0.1.1 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与功能一致 | [报告](lab/reports/dsh-share.md) |
-| modlens | github liustack | 3.17.3 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 命中与功能相符 | [报告](lab/reports/modlens.md) |
-| dsh-recommend | npm | 0.2.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与宣称一致 | [报告](lab/reports/dsh-recommend.md) |
-| dsh-plugin-vetting | npm | 0.5.6 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 规则表命中属预期 | [报告](lab/reports/dsh-plugin-vetting.md) |
+**第一批（2026-08-16，10 份全通过）**：dsh-global-rules · dsh-mermaid · dsh-shortcuts · dsh-deeplink · dsh-navbar · dsh-spotlight · dsh-share · modlens · dsh-recommend · dsh-plugin-vetting —— 全部安装成功且代码行为与宣称一致。
 
-> 已发布 10 份实测报告（含完整日志与复现命令）；首批 6 个"失效条目"标记经复测推翻（本机代理污染 git 通道所致），勘误见 [失效记录勘误](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
+**第二批（2026-08-17，16 通过 + 10 失败）**：
+
+- ✅ 新增通过 16 个：ds-api-usage · dsh-backup · dsh-custom-tool · dsh-deepseek-billing · dsh-diff-viewer · dsh-excel-chat · dsh-memory · dsh-message-edit · dsh-plugin-deepseek-balance · dsh-prompt-studio · dsh-spend · dsh-sticky-note · dsh-task-status · dsh-trajectory-reader · dsh-undo-plugin · dsh-web-archive
+- ❌ 失败 10 个（均带可复现原因）：omdsh 系 6 个（dsh-toolkit + 5 个 tool-*）+ dsh-turn-navigator + dsh-wash-calendar 依赖**已撤包的 `@deepseek-ai/dsh-type-meta`**（npm 与 npmmirror 均 404）；dsh-tool-git 的 prepare 脚本自身配置损坏；dsh-focus-chat 构建需 node ≥24.11（测试机 24.3.0）
+- 📋 完整 26 行表格 + 失败清单见 **[lab/INDEX.md](lab/INDEX.md)**
+
+> 已发布 36 份实测报告（含完整日志与复现命令）；新增 7 个真失效条目（`dsh-external/*`，API+网页双通道 404 确认），早期 6 个"失效条目"误报及勘误见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
 
 ---
 
@@ -56,6 +51,7 @@
 - [01-quickstart.md](guides/01-quickstart.md) · [EN](guides/01-quickstart.en.md) — 5 分钟上手：安装、profile 与 DSH_HOME 是什么
 - [02-first-plugin.md](guides/02-first-plugin.md) · [EN](guides/02-first-plugin.en.md) — 从零写并发布你的第一个插件
 - [03-pitfalls.md](guides/03-pitfalls.md) · [EN](guides/03-pitfalls.en.md) — 装插件之前的权限认知与常见翻车点
+- [FAQ.md](docs/FAQ.md) · [EN 内嵌] — 常见问题大白话版：✅ 推荐=保证吗？命中=恶意吗？
 
 ---
 

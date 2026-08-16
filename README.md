@@ -23,17 +23,20 @@
 
 Full protocol & reproduction: [docs/METHODOLOGY.md](docs/METHODOLOGY.md)
 
-## Coverage (10 reports, 2026-08-16, DSH 0.1.0-rc.6)
+## Coverage (26 passed + 10 failed documented, 2026-08-16/17, DSH 0.1.0-rc.6)
 
-All ten tested plugins installed successfully and shipped purpose-consistent code: `dsh-global-rules`, `dsh-mermaid`, `dsh-shortcuts`, `dsh-deeplink`, `dsh-navbar`, `dsh-spotlight`, `dsh-share`, `modlens`, `dsh-recommend`, `dsh-plugin-vetting`. See [lab/INDEX.md](lab/INDEX.md).
+**Batch 1 (2026-08-16)** — all ten tested plugins installed successfully and shipped purpose-consistent code: `dsh-global-rules`, `dsh-mermaid`, `dsh-shortcuts`, `dsh-deeplink`, `dsh-navbar`, `dsh-spotlight`, `dsh-share`, `modlens`, `dsh-recommend`, `dsh-plugin-vetting`.
 
-Also documented: 6 entries listed in community directories whose repos have vanished (installability reminder), 4 reproducible install frictions (pnpm 9 workspace-root check, git-protocol interception, registry timeouts, allowBuilds), and our own scanner false-positive corrections — kept in the record on purpose.
+**Batch 2 (2026-08-17)** — 16 more passed (`ds-api-usage`, `dsh-backup`, `dsh-custom-tool`, `dsh-deepseek-billing`, `dsh-diff-viewer`, `dsh-excel-chat`, `dsh-memory`, `dsh-message-edit`, `dsh-plugin-deepseek-balance`, `dsh-prompt-studio`, `dsh-spend`, `dsh-sticky-note`, `dsh-task-status`, `dsh-trajectory-reader`, `dsh-undo-plugin`, `dsh-web-archive`) and **10 failed with reproducible causes** (`dsh-toolkit` + 5 omdsh tools + `dsh-turn-navigator` + `dsh-wash-calendar` depend on the unpublished `@deepseek-ai/dsh-type-meta`; `dsh-tool-git`'s prepare script breaks; `dsh-focus-chat` needs node ≥24.11). Full table: [lab/INDEX.md](lab/INDEX.md).
 
-## Guides (bilingual)
+Also documented: 7 genuinely stale directory entries (`dsh-external/*`, API+web 404 double-checked), the earlier 6-entry false alarm and its erratum (proxy pollution of the git channel), 4 reproducible install frictions (pnpm 9 workspace-root check, git-protocol interception, registry timeouts, allowBuilds), and our own scanner false-positive corrections — kept in the record on purpose.
+
+## Guides & FAQ (bilingual)
 
 - Quickstart: [中文](guides/01-quickstart.md) · [EN](guides/01-quickstart.en.md)
 - Write your first plugin: [中文](guides/02-first-plugin.md) · [EN](guides/02-first-plugin.en.md)
 - Pitfalls: [中文](guides/03-pitfalls.md) · [EN](guides/03-pitfalls.en.md)
+- FAQ (plain-language answers): [docs/FAQ.md](docs/FAQ.md)
 
 ## Roadmap
 

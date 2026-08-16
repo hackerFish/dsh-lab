@@ -17,7 +17,21 @@
 
 ## 当前状态
 
-- **失效条目数：0**。本页仅保留勘误记录，不再列出失效条目。
+- **2026-08-17 批次：新增 7 个真失效条目**（GitHub API 404 + 网页 404 双通道确认，非代理误报）：
+
+| 条目 | 证据 |
+|---|---|
+| `dsh-external/browser4-dsh` | API 404 · 网页 404 |
+| `dsh-external/dsh-browser-panel` | API 404 · 网页 404 |
+| `dsh-external/dsh-office` | API 404 · 网页 404 |
+| `dsh-external/dsh-paste-input` | API 404 · 网页 404 |
+| `dsh-external/dsh-session-search` | API 404 · 网页 404 |
+| `dsh-external/dsh-skins` | API 404 · 网页 404 |
+| `dsh-external/dsh-web-panel` | API 404 · 网页 404 |
+
+  这 7 个条目在社区目录 [awesome-dsh-plugin](https://github.com/beancookie/awesome-dsh-plugin) 中仍被收录，但仓库已不存在（疑似组织改名/删除）。**收录 ≠ 可用**的又一例证。
+
+- **当前失效条目数：7**（API 双通道确认）。本页保留勘误记录与失效记录。
 - 复测证据底稿：[lab/logs/stale-repos-verify.md](../logs/stale-repos-verify.md)。
 
 ## 教训与自查命令（仍然有效）
