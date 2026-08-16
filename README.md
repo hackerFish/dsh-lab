@@ -59,6 +59,8 @@
 
 ---
 
+
+> 配套仓库：[awesome-dsh-skills](https://github.com/hackerFish/awesome-dsh-skills) — 12 个实测技能（SKILL.md），复制即用；与本站点共用"先验证再发布"的标准。
 ## 路线图
 
 见 [docs/ROADMAP.md](docs/ROADMAP.md)：
