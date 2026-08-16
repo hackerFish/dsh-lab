@@ -32,7 +32,7 @@
 
 ---
 
-## 当前实测覆盖（50 通过 + 12 失败已记录，2026-08-16/17，DSH 0.1.0-rc.6）
+## 当前实测覆盖（68 通过 + 20 失败已记录，2026-08-16/17，DSH 0.1.0-rc.6）
 
 **第一批（2026-08-16，10 份全通过）**：dsh-global-rules · dsh-mermaid · dsh-shortcuts · dsh-deeplink · dsh-navbar · dsh-spotlight · dsh-share · modlens · dsh-recommend · dsh-plugin-vetting —— 全部安装成功且代码行为与宣称一致。
 
@@ -44,7 +44,9 @@
 
 **第三批（2026-08-17，24 通过 + 2 失败）**：计费 5（balance-meter/cost-meter×2/opencodego×2）、记忆 7（mnemon/memory-jesse/file-memory/knowledge/mneme/shared-memory/memory-meow）、主题 5（skin/skin-switcher/theme-kit/theme-plugin/premium-themes）、工具 2（pi-tui/bash-terminal）、文件 5（file-mentions/hud/file-mount/file-uploads/chat-import）；失败 2：dsh-scholar 发布包缺 workspace 依赖、dsh-TUI prepare 构建失败。扫描器媒体扩展名局限已修复（见方法论勘误）。
 
-> 已发布 62 份实测报告（含完整日志与复现命令）；新增 7 个真失效条目（`dsh-external/*`，API+网页双通道 404 确认），早期 6 个"失效条目"误报及勘误见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
+**第四批（2026-08-17，18 通过 + 8 失败）**：协作/子代理 5（cowork/crosstalk/peer-link/subagent-cwd/subagent-tools）、上下文 3（context/context-proxy/context-vista）、工具 3（docker/hdc-bridge/ponytail）、技能/教育 3（skillport/coding-coach/Code2Skill）、其他 4（adhd-copilot/share-hellodigua/explain/writing-guard），其中 6 个代码零命中；失败 8：dsh-voice 构建脚本与 pnpm 9 不兼容、6 个依赖 `dsh-type-meta`（撤包）、**dsh-interconnect 依赖官方作用域第二个撤包 `@deepseek-ai/dsh-user-interaction`**。
+
+> 已发布 88 份实测报告（含完整日志与复现命令）；新增 7 个真失效条目（`dsh-external/*`，API+网页双通道 404 确认），早期 6 个"失效条目"误报及勘误见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
 
 ---
 

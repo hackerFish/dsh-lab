@@ -5,9 +5,9 @@
 
 **状态图例 / Legend**：✅ 通过 passed · ❌ 未通过 failed（附原因 with reason） · ⏳ 未执行 not run（附原因 with reason）
 
-**测试环境 / Env**：DSH 0.1.0-rc.6 · pnpm 9.15.4 · node 24.3.0 · macOS · 首轮 2026-08-16，第二批 2026-08-17，第三批 2026-08-17
+**测试环境 / Env**：DSH 0.1.0-rc.6 · pnpm 9.15.4 · node 24.3.0 · macOS · 首轮 2026-08-16，第二至四批 2026-08-17
 
-## 通过 / Passed（50 份）
+## 通过 / Passed（68 份）
 
 | 插件 | 分类 | 来源 | 版本 | 安装 | 冒烟 | 快检 | 结论 | 报告 |
 |---|---|---|---|---|---|---|---|---|
@@ -61,8 +61,26 @@
 | dsh-file-mount | 文件 | github acefun29 | 0.5.0 | ✅ | ⏳ | 挂载状态写 + 可写性探测，功能本身 | ✅ 推荐 | [reports/dsh-file-mount.md](reports/dsh-file-mount.md) |
 | dsh-file-uploads | 文件 | github l541402398 | 1.0.0 | ✅ | ⏳ | 自有路由 + 上传文件管理 | ✅ 推荐 | [reports/dsh-file-uploads.md](reports/dsh-file-uploads.md) |
 | dsh-chat-import | 会话 | github Nwflower | 0.5.1 | ✅ | ⏳ | zstd/git 解压导入 + 自有路由，功能本身 | ✅ 推荐 | [reports/dsh-chat-import.md](reports/dsh-chat-import.md) |
+| dsh-cowork | 协作 | github Jesse-njx | 0.1.0 | ✅ | ⏳ | 微信凭据走 dsh credentials；媒体下载带 SSRF 防护 | ✅ 推荐 | [reports/dsh-cowork.md](reports/dsh-cowork.md) |
+| dsh-crosstalk | 协作 | github Jesse-njx | 0.1.0 | ✅ | ⏳ | 仅文档命中（本地注册表路径） | ✅ 推荐 | [reports/dsh-crosstalk.md](reports/dsh-crosstalk.md) |
+| dsh-docker | 工具 | github Jesse-njx | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-docker.md](reports/dsh-docker.md) |
+| dsh-skillport | 技能 | github Jesse-njx | 0.1.0 | ✅ | ⏳ | 仅文档命中 | ✅ 推荐 | [reports/dsh-skillport.md](reports/dsh-skillport.md) |
+| dsh-adhd-copilot | 效率 | github zimai233 | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-adhd-copilot.md](reports/dsh-adhd-copilot.md) |
+| dsh-subagent-cwd | 子代理 | github lynx-gt | 0.2.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-subagent-cwd.md](reports/dsh-subagent-cwd.md) |
+| dsh-subagent-tools | 子代理 | github lynx-gt | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-subagent-tools.md](reports/dsh-subagent-tools.md) |
+| dsh-peer-link | 协作 | github czm15053 | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-peer-link.md](reports/dsh-peer-link.md) |
+| dsh-hdc-bridge | 工具 | github 1na-ko | 0.7.2 | ✅ | ⏳ | hdc 只读命令集 + 硬超时；文档快照命中属预期 | ✅ 推荐 | [reports/dsh-hdc-bridge.md](reports/dsh-hdc-bridge.md) |
+| dsh-share-hellodigua | 分享 | github hellodigua | 0.3.0 | ✅ | ⏳ | fetch 转 data URL 分享，目标由调用方传入 | ✅ 推荐 | [reports/dsh-share-hellodigua.md](reports/dsh-share-hellodigua.md) |
+| dsh-context | 上下文 | github bowenliang123 | 0.10.1 | ✅ | ⏳ | prepare 为 husky，无危险操作 | ✅ 推荐 | [reports/dsh-context.md](reports/dsh-context.md) |
+| dsh-context-proxy | 上下文 | github EvilIrving | 0.1.0 | ✅ | ⏳ | ripgrep 无 shell 层搜索 spill 文件 | ✅ 推荐 | [reports/dsh-context-proxy.md](reports/dsh-context-proxy.md) |
+| context-vista | 上下文 | github GooodWei | 0.1.0 | ✅ | ⏳ | 仅配置路径文档命中 | ✅ 推荐 | [reports/context-vista.md](reports/context-vista.md) |
+| dsh-ponytail | UI | github gongyijie85 | 0.1.3 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-ponytail.md](reports/dsh-ponytail.md) |
+| coding-coach | 教育 | github xiehuan123 | 1.0.2 | ✅ | ⏳ | 命中全部为技能文档/教学数据文本 | ✅ 推荐 | [reports/coding-coach.md](reports/coding-coach.md) |
+| Code2Skill | 技能 | github leechen298 | 1.1.3 | ✅ | ⏳ | 校验器规则表命中属预期（同 vetting 型） | ✅ 推荐 | [reports/Code2Skill.md](reports/Code2Skill.md) |
+| dsh-explain | 阅读 | github yuezengwu | 0.1.0 | ✅ | ⏳ | CSS/atob/SQL 常量，均正常 | ✅ 推荐 | [reports/dsh-explain.md](reports/dsh-explain.md) |
+| dsh-plugin-writing-guard | 安全 | github xmutfyh | 1.3.0 | ✅ | ⏳ | 状态文件原子写，属功能本身 | ✅ 推荐 | [reports/dsh-plugin-writing-guard.md](reports/dsh-plugin-writing-guard.md) |
 
-## 本次未通过 / Failed（12，全部带可复现原因）
+## 本次未通过 / Failed（20，全部带可复现原因）
 
 | 插件 | 来源 | 失败原因（详见报告） | 报告 |
 |---|---|---|---|
@@ -78,12 +96,20 @@
 | dsh-focus-chat | github dingyi222666 | ❌ prepare 需 yarn 构建，`tsdown@0.22.14` 要求 node ≥24.11（本机 24.3.0） | [reports/dsh-focus-chat.md](reports/dsh-focus-chat.md) |
 | dsh-scholar | github lzszq | ❌ 声明 workspace 依赖 `@dsh-scholar/research-client@workspace:^` 但发布包中不存在（发布不完整） | [reports/dsh-scholar.md](reports/dsh-scholar.md) |
 | dsh-TUI | github ccch1mneyyy | ❌ prepare 内 `pnpm install` 失败（根因在仓库自身构建步骤） | [reports/dsh-TUI.md](reports/dsh-TUI.md) |
+| dsh-voice | github Jesse-njx | ❌ prepare 内 pnpm install 报 "packages field missing or empty"（构建脚本与 pnpm 9 workspace 不兼容） | [reports/dsh-voice.md](reports/dsh-voice.md) |
+| dsh-image-search | github zimai233 | ❌ 依赖 `@deepseek-ai/dsh-type-meta` 已撤包（404） | [reports/dsh-image-search.md](reports/dsh-image-search.md) |
+| dsh-video-downloader | github zimai233 | ❌ 同上：`dsh-type-meta` 撤包 | [reports/dsh-video-downloader.md](reports/dsh-video-downloader.md) |
+| dsh-figma-to-lottie | github zimai233 | ❌ 同上 | [reports/dsh-figma-to-lottie.md](reports/dsh-figma-to-lottie.md) |
+| dsh-exam-countdown | github zimai233 | ❌ 同上 | [reports/dsh-exam-countdown.md](reports/dsh-exam-countdown.md) |
+| dsh-repo-setup | github gongyijie85 | ❌ 同上 | [reports/dsh-repo-setup.md](reports/dsh-repo-setup.md) |
+| dsh-deepread | github xiehuan123 | ❌ 同上 | [reports/dsh-deepread.md](reports/dsh-deepread.md) |
+| dsh-interconnect | github Chinesezjc | ❌ 依赖 `@deepseek-ai/dsh-user-interaction` 未发布（404，官方作用域第二个撤包） | [reports/dsh-interconnect.md](reports/dsh-interconnect.md) |
 
 **目录失效条目**（社区目录收录但仓库已不存在，API+网页双通道确认，本轮新发现 7 个 `dsh-external/*`）：见 [reports/stale-entries.md](reports/stale-entries.md)。
 
 ## English Summary
 
-- **Coverage**: 50 passed / 12 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
+- **Coverage**: 68 passed / 20 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
 - **Key finding**: 8 plugins from the `omdsh-dev` family + `dsh-turn-navigator`/`dsh-wash-calendar` depend on `@deepseek-ai/dsh-type-meta`, which returns **404 on both registry.npmjs.org and npmmirror** (unpublished) — they cannot install today.
 - **Verdicts are point-in-time snapshots**; see [METHODOLOGY.en.md](../docs/METHODOLOGY.en.md).
 
