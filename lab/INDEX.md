@@ -7,7 +7,7 @@
 
 **测试环境 / Env**：DSH 0.1.0-rc.6 · pnpm 9.15.4 · node 24.3.0 · macOS · 首轮 2026-08-16，第二至四批 2026-08-17
 
-## 通过 / Passed（68 份）
+## 通过 / Passed（87 份）
 
 | 插件 | 分类 | 来源 | 版本 | 安装 | 冒烟 | 快检 | 结论 | 报告 |
 |---|---|---|---|---|---|---|---|---|
@@ -79,8 +79,27 @@
 | Code2Skill | 技能 | github leechen298 | 1.1.3 | ✅ | ⏳ | 校验器规则表命中属预期（同 vetting 型） | ✅ 推荐 | [reports/Code2Skill.md](reports/Code2Skill.md) |
 | dsh-explain | 阅读 | github yuezengwu | 0.1.0 | ✅ | ⏳ | CSS/atob/SQL 常量，均正常 | ✅ 推荐 | [reports/dsh-explain.md](reports/dsh-explain.md) |
 | dsh-plugin-writing-guard | 安全 | github xmutfyh | 1.3.0 | ✅ | ⏳ | 状态文件原子写，属功能本身 | ✅ 推荐 | [reports/dsh-plugin-writing-guard.md](reports/dsh-plugin-writing-guard.md) |
+| dsh-premise-guard | 安全 | github ICCuse | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-premise-guard.md](reports/dsh-premise-guard.md) |
+| dsh-file-claim | 文件 | github Nwflower | 0.1.7 | ✅ | ⏳ | git 三路合并 + 原子写，属功能本身 | ✅ 推荐 | [reports/dsh-file-claim.md](reports/dsh-file-claim.md) |
+| dsh-browser | 工具 | github Lum1104 | 0.1.0 | ✅ | ⏳ | 仅回环连接 + token 0600；特权网关拒非回环 | ✅ 推荐 | [reports/dsh-browser.md](reports/dsh-browser.md) |
+| dsh-genui | UI | github omdsh-dev | 0.8.6 | ✅ | ⏳ | 动态执行系反命中（注释明示不用 eval） | ✅ 推荐 | [reports/dsh-genui.md](reports/dsh-genui.md) |
+| dsh-data-agent | 数据 | github omdsh-dev | 0.0.9 | ✅ | ⏳ | 凭据走 stdin 不出现在 argv（安全正向） | ✅ 推荐 | [reports/dsh-data-agent.md](reports/dsh-data-agent.md) |
+| DSH-better-sidebar | UI | github omdsh-dev | 0.12.3 | ✅ | ⏳ | node-pty 终端 + 自有路由，功能本身 | ✅ 推荐 | [reports/DSH-better-sidebar.md](reports/DSH-better-sidebar.md) |
+| dsh-annotation | UI | github omdsh-dev | 1.3.16 | ✅ | ⏳ | SVG 产物 + 开发期构建脚本 | ✅ 推荐 | [reports/dsh-annotation.md](reports/dsh-annotation.md) |
+| dsh-at-file | 文件 | github omdsh-dev | 0.6.1 | ✅ | ⏳ | **主动排除 .env 文件**（安全正向） | ✅ 推荐 | [reports/dsh-at-file.md](reports/dsh-at-file.md) |
+| deepseek-harness-tui | 工具 | github openma-ai | HEAD | ✅ | ⏳ | Rust TUI：spawn 属功能本身，FFI 仅测试注释 | ✅ 推荐 | [reports/deepseek-harness-tui.md](reports/deepseek-harness-tui.md) |
+| dsh-tianshu-tui | 工具 | github huiliyi37 | 0.1.2-rc.10 | ✅ | ⏳ | LSP/编辑器 spawn + npm 更新检查，功能本身 | ✅ 推荐 | [reports/dsh-tianshu-tui.md](reports/dsh-tianshu-tui.md) |
+| dsh-message-preview | UI | github asukasec | 0.1.1 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-message-preview.md](reports/dsh-message-preview.md) |
+| dsh-adb | 工具 | github SamXiaBing | 0.2.0 | ✅ | ⏳ | 仅 README 命中 | ✅ 推荐 | [reports/dsh-adb.md](reports/dsh-adb.md) |
+| noatmark-dsh-plugin | 笔记 | github ylwl1997 | 0.1.0 | ✅ | ⏳ | prepare 为 tsc，无危险操作 | ✅ 推荐 | [reports/noatmark-dsh-plugin.md](reports/noatmark-dsh-plugin.md) |
+| dsh-turn-index | 会话 | github Simon314620 | 0.1.1 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-turn-index.md](reports/dsh-turn-index.md) |
+| dsh-builtin-toggles | UI | github Starfie1d1272 | 0.3.1 | ✅ | ⏳ | atomic-write 原子写，功能本身 | ✅ 推荐 | [reports/dsh-builtin-toggles.md](reports/dsh-builtin-toggles.md) |
+| dsh-web-search-exa | 搜索 | github TonyDua | 0.1.3 | ✅ | ⏳ | 匿名 MCP 无需凭据（安全正向） | ✅ 推荐 | [reports/dsh-web-search-exa.md](reports/dsh-web-search-exa.md) |
+| dsh-plugin-grok2api-media-tool | 媒体 | github lsjspl | 0.7.6 | ✅ | ⏳ | 凭据 0600 独占写入（安全正向） | ✅ 推荐 | [reports/dsh-plugin-grok2api-media-tool.md](reports/dsh-plugin-grok2api-media-tool.md) |
+| dsh-memento | 记忆 | github PerryLink | 0.4.0 | ✅ | ⏳ | 明示 Zero network / zero credentials | ✅ 推荐 | [reports/dsh-memento.md](reports/dsh-memento.md) |
+| dsh-plugin-asmemory | 记忆 | github Xplore-LAB | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-plugin-asmemory.md](reports/dsh-plugin-asmemory.md) |
 
-## 本次未通过 / Failed（20，全部带可复现原因）
+## 本次未通过 / Failed（27，全部带可复现原因）
 
 | 插件 | 来源 | 失败原因（详见报告） | 报告 |
 |---|---|---|---|
@@ -104,12 +123,19 @@
 | dsh-repo-setup | github gongyijie85 | ❌ 同上 | [reports/dsh-repo-setup.md](reports/dsh-repo-setup.md) |
 | dsh-deepread | github xiehuan123 | ❌ 同上 | [reports/dsh-deepread.md](reports/dsh-deepread.md) |
 | dsh-interconnect | github Chinesezjc | ❌ 依赖 `@deepseek-ai/dsh-user-interaction` 未发布（404，官方作用域第二个撤包） | [reports/dsh-interconnect.md](reports/dsh-interconnect.md) |
+| dsh-kb-sieve | github ICCuse | ❌ 依赖 `@deepseek-ai/dsh-tools` 范围无匹配版本（registry 仅 rc，官方作用域第三个异常包） | [reports/dsh-kb-sieve.md](reports/dsh-kb-sieve.md) |
+| ex-setting | github omdsh-dev | ❌ prepare 内 `git fetch --depth 1` 特定 commit 失败（环境+仓库构建双重因素） | [reports/ex-setting.md](reports/ex-setting.md) |
+| dsh-sxs-news-collector | github yangyunsong023 | ❌ 依赖 `dsh-type-meta` 已撤包（404） | [reports/dsh-sxs-news-collector.md](reports/dsh-sxs-news-collector.md) |
+| dsh-sxs-anti-bot-http | github yangyunsong023 | ❌ 同上 | [reports/dsh-sxs-anti-bot-http.md](reports/dsh-sxs-anti-bot-http.md) |
+| dsh-tool-search | github vibeinging | ❌ 同上 | [reports/dsh-tool-search.md](reports/dsh-tool-search.md) |
+| nowledge-mem | github nowledge-co | ❌ 同上 | [reports/nowledge-mem.md](reports/nowledge-mem.md) |
+| dsh-plugin-net-access | github Gumiho12345 | ❌ 安装超时（依赖解析阶段网络挂起，两次 280s） | [reports/dsh-plugin-net-access.md](reports/dsh-plugin-net-access.md) |
 
 **目录失效条目**（社区目录收录但仓库已不存在，API+网页双通道确认，本轮新发现 7 个 `dsh-external/*`）：见 [reports/stale-entries.md](reports/stale-entries.md)。
 
 ## English Summary
 
-- **Coverage**: 68 passed / 20 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
+- **Coverage**: 87 passed / 27 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
 - **Key finding**: 8 plugins from the `omdsh-dev` family + `dsh-turn-navigator`/`dsh-wash-calendar` depend on `@deepseek-ai/dsh-type-meta`, which returns **404 on both registry.npmjs.org and npmmirror** (unpublished) — they cannot install today.
 - **Verdicts are point-in-time snapshots**; see [METHODOLOGY.en.md](../docs/METHODOLOGY.en.md).
 
