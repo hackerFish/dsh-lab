@@ -7,7 +7,7 @@
 
 **测试环境 / Env**：DSH 0.1.0-rc.6 · pnpm 9.15.4 · node 24.3.0 · macOS · 首轮 2026-08-16，第二至四批 2026-08-17
 
-## 通过 / Passed（134 份）
+## 通过 / Passed（143 份）
 
 | 插件 | 分类 | 来源 | 版本 | 安装 | 冒烟 | 快检 | 结论 | 报告 |
 |---|---|---|---|---|---|---|---|---|
@@ -145,8 +145,17 @@
 | argo-search（目录条目） | 搜索 | github taxueseek | 2.8.0 | ✅ | ⏳ | 搜索系统 + 凭据泄露检测规则 | — 目录结构发现 | [reports/argo.md](reports/argo.md) |
 | dsh-reef（目录条目） | 协作 | github huey1in | 1.5.2 | ✅ | ⏳ | GitHub/GitLab 评审工具 | — 目录结构发现 | [reports/trio.md](reports/trio.md) |
 | dshmarket（目录条目） | 市场 | github dsh-market | 1.10.1 | ✅ | ⏳ | 插件市场（安装/更新/热重载） | — 目录结构发现 | [reports/dsh-market.md](reports/dsh-market.md) |
+| dsh-plugins (wsxwj123) | 插件集 | github wsxwj123 | 0.1.0 | ✅ | ⏳ | monorepo 合集；skin-gallery 为皮肤安全校验器 | ✅ 推荐 | [reports/dsh-plugins-wsxwj.md](reports/dsh-plugins-wsxwj.md) |
+| dsh-vision-router | 视觉 | github ysr666 | 1.4.3 | ✅ | ⏳ | 代理白名单过滤（安全正向）+ OVH 匿名兜底 | ✅ 推荐 | [reports/dsh-vision-router.md](reports/dsh-vision-router.md) |
+| dsh-plugin-workshop | 开发 | github yyyyukari | 1.6.1 | ✅ | ⏳ | 会 clone+执行第三方安装脚本（功能本身，需知悉） | ⚠️ 可用但注意（安装任意第三方插件） | [reports/dsh-plugin-workshop.md](reports/dsh-plugin-workshop.md) |
+| dsh-pet | 娱乐 | github zealot00 | 0.2.0 | ✅ | ⏳ | 仅 CSS/README 命中 | ✅ 推荐 | [reports/dsh-pet.md](reports/dsh-pet.md) |
+| dsh-plugins (lancecheney) | 插件集 | github lancecheney | 0.0.0 | ✅ | ⏳ | balance 组件凭据走服务端代理 | ✅ 推荐 | [reports/dsh-plugins-lancecheney.md](reports/dsh-plugins-lancecheney.md) |
+| dsh-code-intel | 代码 | github lonelymoon87 | 0.1.2 | ✅ | ⏳ | **只存凭据引用不存秘密值**（安全正向） | ✅ 推荐 | [reports/dsh-code-intel.md](reports/dsh-code-intel.md) |
+| modsearch | 搜索 | github liustack | 5.4.2 | ✅ | ⏳ | 多引擎搜索 CLI + 凭据 URL 过滤 | ✅ 推荐 | [reports/modsearch.md](reports/modsearch.md) |
+| dsh-voice-chat | 语音 | github lak321 | 0.0.0 | ✅ | ⏳ | 仅 README 命中 | ✅ 推荐 | [reports/dsh-voice-chat.md](reports/dsh-voice-chat.md) |
+| dsh-token-pet | 娱乐 | github pk7j7sqryy-ops | 0.1.0 | ✅ | ⏳ | 仅 open-meteo 天气 API | ✅ 推荐 | [reports/dsh-token-pet.md](reports/dsh-token-pet.md) |
 
-## 本次未通过 / Failed（42，全部带可复现原因）
+## 本次未通过 / Failed（48，全部带可复现原因）
 
 | 插件 | 来源 | 失败原因（详见报告） | 报告 |
 |---|---|---|---|
@@ -192,12 +201,19 @@
 | dsh-tool-vision | github gloryxpnv | ❌ 依赖 dsh-type-meta 撤包 | [reports/dsh-tool-vision.md](reports/dsh-tool-vision.md) |
 | dsh-find-plugin | github awesome-dsh-plugin | ❌ 依赖 dsh-type-meta 撤包 | [reports/dsh-find-plugin.md](reports/dsh-find-plugin.md) |
 | deepseek-harness（框架本体） | github deepseek-ai | ❌ 非插件：框架仓库构建需要编译环境（postinstall 失败） | [reports/deepseek-harness-framework.md](reports/deepseek-harness-framework.md) |
+| dsh-tool-csv | github omdsh-dev | ❌ 依赖 dsh-type-meta 撤包 | [reports/dsh-tool-csv.md](reports/dsh-tool-csv.md) |
+| dsh-tool-diff | github omdsh-dev | ❌ 同上 | [reports/dsh-tool-diff.md](reports/dsh-tool-diff.md) |
+| dsh-tool-encoding | github omdsh-dev | ❌ 同上 | [reports/dsh-tool-encoding.md](reports/dsh-tool-encoding.md) |
+| dsh-tool-schema | github omdsh-dev | ❌ 同上 | [reports/dsh-tool-schema.md](reports/dsh-tool-schema.md) |
+| dsh-tool-time | github omdsh-dev | ❌ 同上 | [reports/dsh-tool-time.md](reports/dsh-tool-time.md) |
+| web-components | github omdsh-dev | ❌ 依赖 `@deepseek-ai/dsh-invariants` ^0.0.1 无匹配（官方作用域第五个 rc-only 包） | [reports/web-components.md](reports/web-components.md) |
+| dsh-web-ui | github zhu1090093659 | ❌ 安装超时（两次 280s，依赖解析/构建挂起） | [reports/dsh-web-ui.md](reports/dsh-web-ui.md) |
 
 **目录失效条目**（社区目录收录但仓库已不存在，API+网页双通道确认，本轮新发现 7 个 `dsh-external/*`）：见 [reports/stale-entries.md](reports/stale-entries.md)。
 
 ## English Summary
 
-- **Coverage**: 134 passed / 42 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
+- **Coverage**: 143 passed / 48 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
 - **Key finding**: 8 plugins from the `omdsh-dev` family + `dsh-turn-navigator`/`dsh-wash-calendar` depend on `@deepseek-ai/dsh-type-meta`, which returns **404 on both registry.npmjs.org and npmmirror** (unpublished) — they cannot install today.
 - **Verdicts are point-in-time snapshots**; see [METHODOLOGY.en.md](../docs/METHODOLOGY.en.md).
 
