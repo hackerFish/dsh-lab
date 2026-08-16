@@ -32,7 +32,7 @@
 
 ---
 
-## 当前实测覆盖（87 通过 + 27 失败已记录，2026-08-16/17，DSH 0.1.0-rc.6）
+## 当前实测覆盖（109 通过 + 31 失败已记录，2026-08-16/17，DSH 0.1.0-rc.6）
 
 **第一批（2026-08-16，10 份全通过）**：dsh-global-rules · dsh-mermaid · dsh-shortcuts · dsh-deeplink · dsh-navbar · dsh-spotlight · dsh-share · modlens · dsh-recommend · dsh-plugin-vetting —— 全部安装成功且代码行为与宣称一致。
 
@@ -48,7 +48,9 @@
 
 **第五批（2026-08-17，19 通过 + 7 失败）**：安全 1（premise-guard）、文件 2（file-claim/at-file）、omdsh UI 4（genui/data-agent/better-sidebar/annotation）、TUI 2（deepseek-harness-tui/tianshu-tui）、搜索/媒体/记忆 5、其他 5，其中 6 个代码零命中；失败 7：kb-sieve 遇到**官方作用域第三个打包异常**（dsh-tools 仅 rc 版）、4 个继续依赖撤包 dsh-type-meta、ex-setting 构建期 git fetch 被代理通道干扰、net-access 安装超时。
 
-> 已发布 115 份实测报告（含完整日志与复现命令）；新增 7 个真失效条目（`dsh-external/*`，API+网页双通道 404 确认），早期 6 个"失效条目"误报及勘误见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
+**第六批（2026-08-17，22 通过 + 4 失败）**：Anionex 三件套（computer-use/turn-rewind/vision-toolkit）、拖拽双实现、知识/文档/审查/视觉等 17 个，其中 2 个代码零命中（sticky-disclosure/milestone）；失败 4：**voice-input-plugin 依赖官方作用域第四个未发布包 `@deepseek-ai/dsh-compact`**、3 个继续依赖撤包 dsh-type-meta（累计 21 个）。
+
+> 已发布 141 份实测报告（含完整日志与复现命令）；新增 7 个真失效条目（`dsh-external/*`，API+网页双通道 404 确认），早期 6 个"失效条目"误报及勘误见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
 
 ---
 

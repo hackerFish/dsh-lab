@@ -7,7 +7,7 @@
 
 **测试环境 / Env**：DSH 0.1.0-rc.6 · pnpm 9.15.4 · node 24.3.0 · macOS · 首轮 2026-08-16，第二至四批 2026-08-17
 
-## 通过 / Passed（87 份）
+## 通过 / Passed（109 份）
 
 | 插件 | 分类 | 来源 | 版本 | 安装 | 冒烟 | 快检 | 结论 | 报告 |
 |---|---|---|---|---|---|---|---|---|
@@ -98,8 +98,30 @@
 | dsh-plugin-grok2api-media-tool | 媒体 | github lsjspl | 0.7.6 | ✅ | ⏳ | 凭据 0600 独占写入（安全正向） | ✅ 推荐 | [reports/dsh-plugin-grok2api-media-tool.md](reports/dsh-plugin-grok2api-media-tool.md) |
 | dsh-memento | 记忆 | github PerryLink | 0.4.0 | ✅ | ⏳ | 明示 Zero network / zero credentials | ✅ 推荐 | [reports/dsh-memento.md](reports/dsh-memento.md) |
 | dsh-plugin-asmemory | 记忆 | github Xplore-LAB | 0.1.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-plugin-asmemory.md](reports/dsh-plugin-asmemory.md) |
+| dsh-drag-and-drop (AKIRACOD) | UI | github AKIRACOD | 0.2.0 | ✅ | ⏳ | 自有路由 + 平台命令参数数组传递 | ✅ 推荐 | [reports/dsh-drag-and-drop-aki.md](reports/dsh-drag-and-drop-aki.md) |
+| dsh-drag-and-drop (bill9109) | UI | github bill9109 | 0.1.5 | ✅ | ⏳ | 同 AKIRACOD 实现（双来源命中一致） | ✅ 推荐 | [reports/dsh-drag-and-drop-bill.md](reports/dsh-drag-and-drop-bill.md) |
+| dsh-computer-use | 工具 | github Anionex | 0.1.0 | ✅ | ⏳ | macOS 原生辅助器 + same-origin 请求 | ⚠️ 可用但注意（系统辅助功能权限） | [reports/dsh-computer-use.md](reports/dsh-computer-use.md) |
+| dsh-turn-rewind | 会话 | github Anionex | 0.1.1 | ✅ | ⏳ | git 恢复 + 台账写入，功能本身 | ✅ 推荐 | [reports/dsh-turn-rewind.md](reports/dsh-turn-rewind.md) |
+| dsh-vision-toolkit | 视觉 | github Anionex | 0.1.13 | ✅ | ⏳ | 自更新签名验证 + 原子写（安全正向） | ✅ 推荐 | [reports/dsh-vision-toolkit.md](reports/dsh-vision-toolkit.md) |
+| hkinsure | 知识 | github Anlushu | HEAD | ✅ | ⏳ | 命中均为保险演示数据 JSON | ✅ 推荐 | [reports/hkinsure.md](reports/hkinsure.md) |
+| kb-rag | 知识 | github Breeze136 | HEAD | ✅ | ⏳ | spawn python RAG 引擎，功能本身 | ✅ 推荐 | [reports/kb-rag.md](reports/kb-rag.md) |
+| dsh-web-review | 审查 | github CanglongCl | 0.3.0-rc.2 | ✅ | ⏳ | 命中全在 eval 工具链/文档，运行时干净 | ✅ 推荐 | [reports/dsh-web-review.md](reports/dsh-web-review.md) |
+| dsh-sticky-disclosure | UI | github Han-1413141 | 1.0.1 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-sticky-disclosure.md](reports/dsh-sticky-disclosure.md) |
+| dsh-plugin-mineru | 文档 | github HuanLinOTO | 0.2.2 | ✅ | ⏳ | fetch 用户配置的 MinerU 服务 | ✅ 推荐 | [reports/dsh-plugin-mineru.md](reports/dsh-plugin-mineru.md) |
+| dsh-galgame | 娱乐 | github Lanxing6480 | 1.1.0 | ✅ | ⏳ | 仅 CSS 产物命中 | ✅ 推荐 | [reports/dsh-galgame.md](reports/dsh-galgame.md) |
+| dsh-smooth-stream | 会话 | github Laplace-bit | 0.1.0 | ✅ | ⏳ | 槽位注入系 Cordis 正常机制 | ✅ 推荐 | [reports/dsh-smooth-stream.md](reports/dsh-smooth-stream.md) |
+| dsh-web-attention-badge | UI | github Luaphes | 0.3.2 | ✅ | ⏳ | fetch 同源 favicon 探测 | ✅ 推荐 | [reports/dsh-web-attention-badge.md](reports/dsh-web-attention-badge.md) |
+| dsh-plugin-description | UI | github MysaDC | 1.2.1 | ✅ | ⏳ | 描述数据文件 + 自有路由 | ✅ 推荐 | [reports/dsh-plugin-description.md](reports/dsh-plugin-description.md) |
+| dsh-visualize | 视觉 | github Nagi-ovo | 0.1.2 | ✅ | ⏳ | 仅注释文本命中 | ✅ 推荐 | [reports/dsh-visualize.md](reports/dsh-visualize.md) |
+| dsh-plugin (PicGo) | 工具 | github PicGo | 0.1.0 | ✅ | ⏳ | 仅 SKILL 文档命中 | ✅ 推荐 | [reports/dsh-plugin-picgo.md](reports/dsh-plugin-picgo.md) |
+| dsh-deep-whale | 工具 | github Small-tailqwq | HEAD | ✅ | ⏳ | 命中全为内嵌 base64 美术资源 | ✅ 推荐 | [reports/dsh-deep-whale.md](reports/dsh-deep-whale.md) |
+| dsh-milestone | 效率 | github SnowCrescenter-tech | 0.6.0 | ✅ | ⏳ | **代码零命中** | ✅ 推荐 | [reports/dsh-milestone.md](reports/dsh-milestone.md) |
+| billion-context-dsh | 上下文 | github Tyan66666 | 0.2.1 | ✅ | ⏳ | 仅文档命中 | ✅ 推荐 | [reports/billion-context-dsh.md](reports/billion-context-dsh.md) |
+| dsh-prompt-stash | 提示词 | github Wine-Red | 0.2.2 | ✅ | ⏳ | 明示不存储凭据（安全正向） | ✅ 推荐 | [reports/dsh-prompt-stash.md](reports/dsh-prompt-stash.md) |
+| dsh-continual-evolve | 记忆 | github ZK-Andy | 0.1.1 | ✅ | ⏳ | 评审/基准文件 0600 写入 | ✅ 推荐 | [reports/dsh-continual-evolve.md](reports/dsh-continual-evolve.md) |
+| dsh-openpencil | 工具 | github ZSeven-W | 0.1.0-rc.1 | ✅ | ⏳ | 编辑器 spawn + 能力令牌签名验证 | ✅ 推荐 | [reports/dsh-openpencil.md](reports/dsh-openpencil.md) |
 
-## 本次未通过 / Failed（27，全部带可复现原因）
+## 本次未通过 / Failed（31，全部带可复现原因）
 
 | 插件 | 来源 | 失败原因（详见报告） | 报告 |
 |---|---|---|---|
@@ -130,12 +152,16 @@
 | dsh-tool-search | github vibeinging | ❌ 同上 | [reports/dsh-tool-search.md](reports/dsh-tool-search.md) |
 | nowledge-mem | github nowledge-co | ❌ 同上 | [reports/nowledge-mem.md](reports/nowledge-mem.md) |
 | dsh-plugin-net-access | github Gumiho12345 | ❌ 安装超时（依赖解析阶段网络挂起，两次 280s） | [reports/dsh-plugin-net-access.md](reports/dsh-plugin-net-access.md) |
+| distill | github LoserFox | ❌ 依赖 `dsh-type-meta` 已撤包（404） | [reports/distill.md](reports/distill.md) |
+| dsh-plugin-knowledge-graph | github Luke-Yong | ❌ 同上 | [reports/dsh-plugin-knowledge-graph.md](reports/dsh-plugin-knowledge-graph.md) |
+| dsh-openmaic | github THU-MAIC | ❌ 同上 | [reports/dsh-openmaic.md](reports/dsh-openmaic.md) |
+| dsh-voice-input-plugin | github Zhangbo-cn | ❌ 依赖 `@deepseek-ai/dsh-compact` 未发布（404，官方作用域第四个） | [reports/dsh-voice-input-plugin.md](reports/dsh-voice-input-plugin.md) |
 
 **目录失效条目**（社区目录收录但仓库已不存在，API+网页双通道确认，本轮新发现 7 个 `dsh-external/*`）：见 [reports/stale-entries.md](reports/stale-entries.md)。
 
 ## English Summary
 
-- **Coverage**: 87 passed / 27 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
+- **Coverage**: 109 passed / 31 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
 - **Key finding**: 8 plugins from the `omdsh-dev` family + `dsh-turn-navigator`/`dsh-wash-calendar` depend on `@deepseek-ai/dsh-type-meta`, which returns **404 on both registry.npmjs.org and npmmirror** (unpublished) — they cannot install today.
 - **Verdicts are point-in-time snapshots**; see [METHODOLOGY.en.md](../docs/METHODOLOGY.en.md).
 
