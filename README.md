@@ -61,6 +61,7 @@
 
 
 > 配套仓库：[awesome-dsh-skills](https://github.com/hackerFish/awesome-dsh-skills) — 12 个实测技能（SKILL.md），复制即用；与本站点共用"先验证再发布"的标准。
+> 配套仓库：[awesome-dsh-skills](https://github.com/hackerFish/awesome-dsh-skills) — 12 个实测技能；[awesome-dsh-presets](https://github.com/hackerFish/awesome-dsh-presets) — 4 个实测预设与 4 份规则。三件套同一标准：先验证，再发布。
 ## 路线图
 
 见 [docs/ROADMAP.md](docs/ROADMAP.md)：
