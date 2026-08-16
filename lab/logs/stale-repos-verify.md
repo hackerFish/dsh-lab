@@ -61,3 +61,9 @@ $ curl -s https://api.github.com/repos/AKS1st/dsh-cyber-particle
 - 本机 git 经 Clash 代理访问 GitHub 存在**间歇性**两类故障：`SSL: no alternative certificate subject name matches target host name 'github.com'` 与连接限速中断（`Operation too slow`），二者在本次复测中都被当场复现。
 - 初次检查（同日早些时候）极可能撞上了这些故障，把「访问失败」误记成了「仓库不存在」。
 - 教训：**失效/失败类结论必须用第二通道（GitHub API）交叉验证后再发布。**
+
+## 根因闭环（原始日志 + 当场复现）
+
+- 原始检查日志（`.lab-logs/b2-dsh-diagram.log`、`b2-dsh-sysmon.log`、`b3-dsh-cyber-particle.log`，2026-08-16 19:17–19:26）显示：当时 **API 已返回 200，git 却报 `repository not found`**，检查脚本采信了 git 通道。
+- 2026-08-16 21:10 该假象当场复现：对确定公开的 `hackerFish/dsh-lab`（本实验室主仓库），`git ls-remote` 同样返回 `fatal: repository ... not found`，而 GitHub API/网页均正常。
+- 结论：本机 Clash 代理（127.0.0.1:7890）会间歇性污染 git smart-HTTP 通道（假 not found / SSL 主体名不匹配 / 限速中断三种形态均被观测到），**git 通道在本环境不可作为失效类结论的唯一依据**。

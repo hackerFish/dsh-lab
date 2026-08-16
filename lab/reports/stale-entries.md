@@ -4,7 +4,7 @@
 
 ## 勘误过程
 
-初次检查（2026-08-16）时，6 个条目被标记为「仓库已消失」。同日 20:52–20:57 复测：全部 6 个仓库 GitHub API 200、网页 200；其中 2 个 `git ls-remote` 直接返回 HEAD，其余 4 个的 git 访问被本机代理限速中断（`Operation too slow`），但 API 元数据（`private:false` + `pushed_at`）确认存活。判定：**原「失效」结论为本机网络故障导致的误报，非仓库真实状态。**
+初次检查（2026-08-16 19:17–19:26，见 `.lab-logs/b2-*`、`b3-*`）时，检查脚本**已经同时记录到「GitHub API 200」与「git repository not found」两种信号，但采信了 git**，6 个条目因此被标记为「仓库已消失」。同日 20:52–20:57 复测：全部 6 个仓库 GitHub API 200、网页 200；其中 3 个 `git ls-remote` 直接返回 HEAD，其余 3 个的 git 访问被本机代理限速中断（`Operation too slow`），但 API 元数据（`private:false` + `pushed_at`）确认存活。21:10 该假象**当场复现**：对确定公开的 `hackerFish/dsh-lab`，git 同样报 `repository not found` 而 API 正常——证明本机 Clash 代理会间歇性污染 git 通道、返回假的 not found。判定：**原「失效」结论为测试环境网络故障导致的误报，非仓库真实状态。**
 
 | 条目 | 原始标记 | 复测结果 | 判定 |
 |---|---|---|---|

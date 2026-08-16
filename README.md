@@ -47,7 +47,7 @@
 | dsh-recommend | npm | 0.2.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与宣称一致 | [报告](lab/reports/dsh-recommend.md) |
 | dsh-plugin-vetting | npm | 0.5.6 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 规则表命中属预期 | [报告](lab/reports/dsh-plugin-vetting.md) |
 
-> 已发布 10 份实测报告（含完整日志与复现命令）；另发现 6 个"目录收录但仓库已消失"的失效条目，见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
+> 已发布 10 份实测报告（含完整日志与复现命令）；首批 6 个"失效条目"标记经复测推翻（本机代理污染 git 通道所致），勘误见 [失效记录勘误](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
 
 ---
 
