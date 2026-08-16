@@ -1,0 +1,29 @@
+# 扫描完成: /Users/matiansa/Desktop/ds_hns/cy/.lab-home/profiles/web/node_modules/dsh-plugin-vetting
+扫描文件数: 7
+
+## 动态执行 (5 处)
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/README.md:17
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/README.md:29
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/index.js:203
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/rules.js:32
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/scan.js:234
+
+## 子进程 (9 处)
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/README.md:31
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/README.md:91
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/gate.js:13
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/index.js:18
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/index.js:36
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/index.js:117
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/index.js:203
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/rules.js:31
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/scan.js:230
+
+## 文件写入/删除 (2 处)
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/index.js:54
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/index.js:174
+
+## 凭证读取 (1 处)
+  - ../.lab-home/profiles/web/node_modules/dsh-plugin-vetting/lib/rules.js:28
+
+提醒: 命中 ≠ 恶意，未命中 ≠ 无害。本扫描是线索，不是判决。

@@ -13,7 +13,10 @@
 | dsh-navbar | github vlln | 0.3.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 11 文件零命中 | ✅ 推荐 | [reports/dsh-navbar.md](reports/dsh-navbar.md) |
 | dsh-spotlight | github 0xsline | 0.0.2 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 运行代码无命中 | ✅ 推荐 | [reports/dsh-spotlight.md](reports/dsh-spotlight.md) |
 | dsh-share | github zljr | 0.1.1 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与功能一致 | ✅ 推荐 | [reports/dsh-share.md](reports/dsh-share.md) |
+| modlens | github liustack | 3.17.3 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 命中与功能相符（视觉插件） | ✅ 推荐 | [reports/modlens.md](reports/modlens.md) |
+| dsh-recommend | npm | 0.2.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与宣称一致 | ✅ 推荐 | [reports/dsh-recommend.md](reports/dsh-recommend.md) |
+| dsh-plugin-vetting | npm | 0.5.6 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 规则表命中属预期 | ✅ 推荐 | [reports/dsh-plugin-vetting.md](reports/dsh-plugin-vetting.md) |
 
-**目录失效条目**（收录了但仓库拉不到，已累计 5 个）：见 [reports/stale-entries.md](reports/stale-entries.md)。
+**目录失效条目**（收录了但仓库拉不到，已累计 6 个）：见 [reports/stale-entries.md](reports/stale-entries.md)。
 
 > ⏳ 冒烟关需要模型凭据；dsh-lab 将用自己的测试凭据执行（单插件消耗上限 0.5 元等价 token）。无凭据复现者跳过该关即可。

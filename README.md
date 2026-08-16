@@ -43,8 +43,11 @@
 | dsh-navbar | github vlln | 0.3.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 11 文件零命中 | [报告](lab/reports/dsh-navbar.md) |
 | dsh-spotlight | github 0xsline | 0.0.2 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 运行代码无命中 | [报告](lab/reports/dsh-spotlight.md) |
 | dsh-share | github zljr | 0.1.1 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与功能一致 | [报告](lab/reports/dsh-share.md) |
+| modlens | github liustack | 3.17.3 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 命中与功能相符 | [报告](lab/reports/modlens.md) |
+| dsh-recommend | npm | 0.2.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与宣称一致 | [报告](lab/reports/dsh-recommend.md) |
+| dsh-plugin-vetting | npm | 0.5.6 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 规则表命中属预期 | [报告](lab/reports/dsh-plugin-vetting.md) |
 
-> 已发布 7 份实测报告（含完整日志与复现命令）；另发现 5 个"目录收录但仓库已消失"的失效条目，见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
+> 已发布 10 份实测报告（含完整日志与复现命令）；另发现 6 个"目录收录但仓库已消失"的失效条目，见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
 
 ---
 

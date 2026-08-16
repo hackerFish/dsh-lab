@@ -1,0 +1,127 @@
+# 扫描完成: /Users/matiansa/Desktop/ds_hns/cy/_src/modlens
+扫描文件数: 132
+
+## 混淆线索 (39 处)
+  - ../_src/modlens/CHANGELOG.md:5 [超长行 1316 字符]
+  - ../_src/modlens/CHANGELOG.md:9 [超长行 1582 字符]
+  - ../_src/modlens/CHANGELOG.md:13 [超长行 1277 字符]
+  - ../_src/modlens/CHANGELOG.md:18 [超长行 2179 字符]
+  - ../_src/modlens/CHANGELOG.md:19 [超长行 877 字符]
+  - ../_src/modlens/CHANGELOG.md:20 [超长行 1077 字符]
+  - ../_src/modlens/CHANGELOG.md:24 [超长行 1122 字符]
+  - ../_src/modlens/CHANGELOG.md:29 [超长行 999 字符]
+  - ../_src/modlens/CHANGELOG.md:34 [超长行 1576 字符]
+  - ../_src/modlens/CHANGELOG.md:39 [超长行 1455 字符]
+  - ../_src/modlens/CHANGELOG.md:43 [超长行 1021 字符]
+  - ../_src/modlens/CHANGELOG.md:48 [超长行 1553 字符]
+  - ../_src/modlens/CHANGELOG.md:54 [超长行 1177 字符]
+  - ../_src/modlens/CHANGELOG.md:58 [超长行 1625 字符]
+  - ../_src/modlens/CHANGELOG.md:66 [超长行 1159 字符]
+  - ../_src/modlens/CHANGELOG.md:70 [超长行 1134 字符]
+  - ../_src/modlens/CHANGELOG.md:75 [超长行 1513 字符]
+  - ../_src/modlens/CHANGELOG.md:76 [超长行 834 字符]
+  - ../_src/modlens/CHANGELOG.md:85 [超长行 1067 字符]
+  - ../_src/modlens/CHANGELOG.md:90 [超长行 907 字符]
+  ... 其余 19 处省略
+
+## 文件写入/删除 (255 处)
+  - ../_src/modlens/CHANGELOG.md:5
+  - ../_src/modlens/dsh/index.js:14
+  - ../_src/modlens/dsh/index.js:415
+  - ../_src/modlens/dsh/index.js:420
+  - ../_src/modlens/dsh/index.js:832
+  - ../_src/modlens/dsh/index.js:854
+  - ../_src/modlens/dsh/index.js:1149
+  - ../_src/modlens/dsh/index.js:1209
+  - ../_src/modlens/evals/cases/prompt-injection/make-image.mjs:11
+  - ../_src/modlens/evals/cases/prompt-injection/make-image.mjs:123
+  - ../_src/modlens/evals/run.mjs:184
+  - ../_src/modlens/scripts/release.mjs:17
+  - ../_src/modlens/scripts/release.mjs:118
+  - ../_src/modlens/scripts/stamp.mjs:8
+  - ../_src/modlens/scripts/stamp.mjs:140
+  - ../_src/modlens/src/analyzer.leak.parent.mjs:22
+  - ../_src/modlens/src/analyzer.leak.test.ts:32
+  - ../_src/modlens/src/analyzer.test.ts:63
+  - ../_src/modlens/src/analyzer.test.ts:77
+  - ../_src/modlens/src/analyzer.test.ts:78
+  ... 其余 235 处省略
+
+## 子进程 (31 处)
+  - ../_src/modlens/CHANGELOG.md:54
+  - ../_src/modlens/CHANGELOG.md:75
+  - ../_src/modlens/dsh/index.js:13
+  - ../_src/modlens/dsh/index.js:891
+  - ../_src/modlens/dsh/index.js:1217
+  - ../_src/modlens/evals/run.mjs:11
+  - ../_src/modlens/evals/run.mjs:58
+  - ../_src/modlens/evals/run.mjs:139
+  - ../_src/modlens/scripts/release.mjs:16
+  - ../_src/modlens/scripts/stamp.test.mjs:1
+  - ../_src/modlens/src/analyzer.leak.test.ts:1
+  - ../_src/modlens/src/analyzer.leak.test.ts:41
+  - ../_src/modlens/src/analyzer.ts:1
+  - ../_src/modlens/src/analyzer.ts:542
+  - ../_src/modlens/src/analyzer.ts:545
+  - ../_src/modlens/src/auto/discover.ts:7
+  - ../_src/modlens/src/auto/routes.ts:14
+  - ../_src/modlens/src/main.test.ts:4
+  - ../_src/modlens/src/main.test.ts:34
+  - ../_src/modlens/src/main.test.ts:120
+  ... 其余 11 处省略
+
+## 凭证读取 (44 处)
+  - ../_src/modlens/CHANGELOG.md:60
+  - ../_src/modlens/CHANGELOG.md:116
+  - ../_src/modlens/CHANGELOG.md:126
+  - ../_src/modlens/INSTALL.md:16
+  - ../_src/modlens/INSTALL.md:156
+  - ../_src/modlens/README.md:107
+  - ../_src/modlens/docs/cli.md:96
+  - ../_src/modlens/docs/commit.md:74
+  - ../_src/modlens/skills/modlens/references/configure.md:71
+  - ../_src/modlens/skills/modlens/references/onboard.md:27
+  - ../_src/modlens/src/auto/discover.test.ts:117
+  - ../_src/modlens/src/auto/routes.test.ts:205
+  - ../_src/modlens/src/auto/routes.test.ts:257
+  - ../_src/modlens/src/auto/routes.ts:5
+  - ../_src/modlens/src/auto/routes.ts:13
+  - ../_src/modlens/src/auto/routes.ts:301
+  - ../_src/modlens/src/auto/routes.ts:361
+  - ../_src/modlens/src/auto/routes.ts:380
+  - ../_src/modlens/src/auto/routes.ts:382
+  - ../_src/modlens/src/auto/routes.ts:387
+  ... 其余 24 处省略
+
+## 网络出口 (21 处)
+  - ../_src/modlens/CHANGELOG.md:75
+  - ../_src/modlens/dsh/client.js:57
+  - ../_src/modlens/dsh/client.js:111
+  - ../_src/modlens/dsh/client.js:338
+  - ../_src/modlens/dsh/client.js:600
+  - ../_src/modlens/dsh/client.js:661
+  - ../_src/modlens/dsh/client.js:776
+  - ../_src/modlens/skills/modlens/SKILL.md:10
+  - ../_src/modlens/src/imageInput.test.ts:13
+  - ../_src/modlens/src/imageInput.test.ts:20
+  - ../_src/modlens/src/imageInput.ts:184
+  - ../_src/modlens/src/main.test.ts:317
+  - ../_src/modlens/src/main.test.ts:335
+  - ../_src/modlens/src/net/proxy.ts:73
+  - ../_src/modlens/src/net/proxy.ts:82
+  - ../_src/modlens/src/net/proxy.ts:86
+  - ../_src/modlens/src/net/proxy.ts:101
+  - ../_src/modlens/src/providers/anthropicApi.ts:57
+  - ../_src/modlens/src/providers/geminiApi.test.ts:102
+  - ../_src/modlens/src/providers/geminiApi.ts:44
+  ... 其余 1 处省略
+
+## 动态执行 (3 处)
+  - ../_src/modlens/evals/run.mjs:215
+  - ../_src/modlens/src/dshClient.test.ts:120
+  - ../_src/modlens/src/dshClient.test.ts:368
+
+## 原生模块 (1 处)
+  - ../_src/modlens/skills/modlens/references/runtime.md:75
+
+提醒: 命中 ≠ 恶意，未命中 ≠ 无害。本扫描是线索，不是判决。
