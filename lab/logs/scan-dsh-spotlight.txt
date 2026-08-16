@@ -1,0 +1,37 @@
+# 扫描完成: /Users/matiansa/Desktop/ds_hns/cy/_src/dsh-spotlight
+扫描文件数: 58
+
+## 凭证读取 (9 处)
+  - ../_src/dsh-spotlight/.agents/skills/dsh-plugin-compose/SKILL.md:39
+  - ../_src/dsh-spotlight/.agents/skills/dsh-plugin-development/SKILL.md:75
+  - ../_src/dsh-spotlight/.agents/skills/dsh-plugin-implement/SKILL.md:46
+  - ../_src/dsh-spotlight/.agents/skills/dsh-plugin-plan/SKILL.md:78
+  - ../_src/dsh-spotlight/.agents/skills/dsh-plugin-release/SKILL.md:22
+  - ../_src/dsh-spotlight/.agents/skills/dsh-plugin-release/SKILL.md:60
+  - ../_src/dsh-spotlight/.agents/skills/dsh-plugin-test/SKILL.md:55
+  - ../_src/dsh-spotlight/.agents/skills/dsh-plugin-test/SKILL.md:83
+  - ../_src/dsh-spotlight/tests/snapshots/README.md:5
+
+## 混淆线索 (1 处)
+  - ../_src/dsh-spotlight/docs/dsh-plugin-contracts.md:23 [超长行 983 字符]
+
+## 安装钩子 (1 处)
+  - ../_src/dsh-spotlight/package.json:15
+
+## 原生模块 (2 处)
+  - ../_src/dsh-spotlight/pnpm-lock.yaml:45
+  - ../_src/dsh-spotlight/pnpm-lock.yaml:47
+
+## 子进程 (3 处)
+  - ../_src/dsh-spotlight/scripts/extract-patch.mjs:30
+  - ../_src/dsh-spotlight/scripts/prepare.mjs:5
+  - ../_src/dsh-spotlight/scripts/prepare.mjs:26
+
+## 文件写入/删除 (5 处)
+  - ../_src/dsh-spotlight/scripts/extract-patch.mjs:32
+  - ../_src/dsh-spotlight/scripts/extract-patch.mjs:107
+  - ../_src/dsh-spotlight/scripts/extract-patch.mjs:115
+  - ../_src/dsh-spotlight/scripts/prepare.mjs:1
+  - ../_src/dsh-spotlight/scripts/prepare.mjs:19
+
+提醒: 命中 ≠ 恶意，未命中 ≠ 无害。本扫描是线索，不是判决。

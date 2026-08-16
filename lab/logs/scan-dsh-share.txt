@@ -1,0 +1,23 @@
+# 扫描完成: /Users/matiansa/Desktop/ds_hns/cy/_src/dsh-share
+扫描文件数: 31
+
+## 凭证读取 (2 处)
+  - ../_src/dsh-share/README.md:25
+  - ../_src/dsh-share/README_CN.md:25
+
+## 文件写入/删除 (4 处)
+  - ../_src/dsh-share/scripts/build.mjs:14
+  - ../_src/dsh-share/scripts/build.mjs:63
+  - ../_src/dsh-share/src/host/store.ts:11
+  - ../_src/dsh-share/src/host/store.ts:114
+
+## 动态执行 (2 处)
+  - ../_src/dsh-share/scripts/build.mjs:66
+  - ../_src/dsh-share/tests/client.test.mjs:29
+
+## 网络出口 (3 处)
+  - ../_src/dsh-share/tests/host.test.mjs:90
+  - ../_src/dsh-share/tests/host.test.mjs:131
+  - ../_src/dsh-share/tests/host.test.mjs:145
+
+提醒: 命中 ≠ 恶意，未命中 ≠ 无害。本扫描是线索，不是判决。

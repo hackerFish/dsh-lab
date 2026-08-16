@@ -40,8 +40,11 @@
 | dsh-mermaid | github AKS1st | 0.4.2 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 命中均有合理解释 | [报告](lab/reports/dsh-mermaid.md) |
 | dsh-shortcuts | github Ricketts-Guo | 1.1.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 注意 install.sh | [报告](lab/reports/dsh-shortcuts.md) |
 | dsh-deeplink | github qyw233 | 0.5.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 代码零命中 | [报告](lab/reports/dsh-deeplink.md) |
+| dsh-navbar | github vlln | 0.3.0 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 11 文件零命中 | [报告](lab/reports/dsh-navbar.md) |
+| dsh-spotlight | github 0xsline | 0.0.2 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 运行代码无命中 | [报告](lab/reports/dsh-spotlight.md) |
+| dsh-share | github zljr | 0.1.1 | 0.1.0-rc.6 | 2026-08-16 | ✅ | ⏳ | 行为与功能一致 | [报告](lab/reports/dsh-share.md) |
 
-> 首批 4 份报告已发布，含完整测试日志与复现命令；目录里还有 3 个"收录但仓库已消失"的失效条目，见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
+> 已发布 7 份实测报告（含完整日志与复现命令）；另发现 5 个"目录收录但仓库已消失"的失效条目，见 [失效记录](lab/reports/stale-entries.md)。⏳=冒烟关需模型凭据，将用实验室自有凭据补测。
 
 ---
 
