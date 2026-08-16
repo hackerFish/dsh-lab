@@ -7,7 +7,7 @@
 
 **测试环境 / Env**：DSH 0.1.0-rc.6 · pnpm 9.15.4 · node 24.3.0 · macOS · 首轮 2026-08-16，第二至四批 2026-08-17
 
-## 通过 / Passed（109 份）
+## 通过 / Passed（134 份）
 
 | 插件 | 分类 | 来源 | 版本 | 安装 | 冒烟 | 快检 | 结论 | 报告 |
 |---|---|---|---|---|---|---|---|---|
@@ -120,8 +120,33 @@
 | dsh-prompt-stash | 提示词 | github Wine-Red | 0.2.2 | ✅ | ⏳ | 明示不存储凭据（安全正向） | ✅ 推荐 | [reports/dsh-prompt-stash.md](reports/dsh-prompt-stash.md) |
 | dsh-continual-evolve | 记忆 | github ZK-Andy | 0.1.1 | ✅ | ⏳ | 评审/基准文件 0600 写入 | ✅ 推荐 | [reports/dsh-continual-evolve.md](reports/dsh-continual-evolve.md) |
 | dsh-openpencil | 工具 | github ZSeven-W | 0.1.0-rc.1 | ✅ | ⏳ | 编辑器 spawn + 能力令牌签名验证 | ✅ 推荐 | [reports/dsh-openpencil.md](reports/dsh-openpencil.md) |
+| dsh-sidechain | 协作 | github Buyi-wsgzg | 0.6.3 | ✅ | ⏳ | 子会话状态写入，功能本身 | ✅ 推荐 | [reports/dsh-sidechain.md](reports/dsh-sidechain.md) |
+| dsh-plugin-anydoc | 文档 | github beancookie | 0.1.0 | ✅ | ⏳ | 转换结果写输出文件 | ✅ 推荐 | [reports/dsh-plugin-anydoc.md](reports/dsh-plugin-anydoc.md) |
+| dsh-plugin-registry | 市场 | github beancookie | 0.1.0 | ✅ | ⏳ | 注册表快照 + 4s 超时更新 | ✅ 推荐 | [reports/dsh-plugin-registry.md](reports/dsh-plugin-registry.md) |
+| dsh-conversation-share | 分享 | github bill9109 | 0.1.1 | ✅ | ⏳ | 分享截图编码，功能本身 | ✅ 推荐 | [reports/dsh-conversation-share.md](reports/dsh-conversation-share.md) |
+| dsh-web-billing | 计费 | github bpc-oss | 1.1.0 | ✅ | ⏳ | 余额接口 + 账本原子写 | ✅ 推荐 | [reports/dsh-web-billing.md](reports/dsh-web-billing.md) |
+| dsh-side-panel | UI | github ccq1 | 0.2.0 | ✅ | ⏳ | 终端含 shell 路径白名单校验 | ✅ 推荐 | [reports/dsh-side-panel.md](reports/dsh-side-panel.md) |
+| dsh-llm-inspector | 调试 | github cdxiaodong | 0.1.1 | ✅ | ⏳ | 审计日志追加写 | ✅ 推荐 | [reports/dsh-llm-inspector.md](reports/dsh-llm-inspector.md) |
+| dsh-reverse-skill | 技能 | github dhicoc | 1.0.2 | ✅ | ⏳ | 命中全为渗透测试**文档载荷**（分析对象非执行） | ⚠️ 可用但注意（攻击性安全内容） | [reports/dsh-reverse-skill.md](reports/dsh-reverse-skill.md) |
+| dsh-unarchive | 工具 | github edfrey0044 | 0.1.0 | ✅ | ⏳ | 仅文档命中 | ✅ 推荐 | [reports/dsh-unarchive.md](reports/dsh-unarchive.md) |
+| dsh-remote | 远程 | github flymysql | 0.5.7 | ✅ | ⏳ | SSH/SFTP 远程执行（README 明示高危能力） | ⚠️ 可用但注意（远程 shell 权限） | [reports/dsh-remote.md](reports/dsh-remote.md) |
+| dsh-msgrail | 会话 | github futongxu9-maker | 1.0.0 | ✅ | ⏳ | 自有路由 + 文档 | ✅ 推荐 | [reports/dsh-msgrail.md](reports/dsh-msgrail.md) |
+| dsh-path-reveal | 工具 | github futongxu9-maker | 1.0.0 | ✅ | ⏳ | 系统文件管理器打开位置 | ✅ 推荐 | [reports/dsh-path-reveal.md](reports/dsh-path-reveal.md) |
+| dsh-ux | UI | github jiangnanquan | 1.0.0 | ✅ | ⏳ | 余额显示走官方接口 | ✅ 推荐 | [reports/dsh-ux.md](reports/dsh-ux.md) |
+| dsh-apple-mode | UI | github jihongboo | 0.1.0 | ✅ | ⏳ | 带 install.sh（安装 preset，同 shortcuts 模式） | ✅ 推荐 | [reports/dsh-apple-mode.md](reports/dsh-apple-mode.md) |
+| dsh-mobile-gui-agent | 工具 | github kunjinkao-os | 0.2.0 | ✅ | ⏳ | adb 控制 + 账号安全审批规则 | ⚠️ 可用但注意（设备控制权限） | [reports/dsh-mobile-gui-agent.md](reports/dsh-mobile-gui-agent.md) |
+| dsh-filetree | 文件 | github lak321 | 0.0.0 | ✅ | ⏳ | 自有路由文件树 | ✅ 推荐 | [reports/dsh-filetree.md](reports/dsh-filetree.md) |
+| dsh-screen-agent | 工具 | github lak321 | 0.0.0 | ✅ | ⏳ | powershell 截图脚本 | ✅ 推荐 | [reports/dsh-screen-agent.md](reports/dsh-screen-agent.md) |
+| creght-skills（目录条目） | 技能 | github creght-dev | 1.0.0 | ✅ | ⏳ | 非插件：技能集合，根无 cordis.patch.yml | — 目录结构发现 | [reports/skills-creght.md](reports/skills-creght.md) |
+| mattpocock-skills-dsh（目录条目） | 技能 | github gongyijie85 | 0.1.2 | ✅ | ⏳ | 非插件：技能集合 | — 目录结构发现 | [reports/mattpocock-skills-dsh.md](reports/mattpocock-skills-dsh.md) |
+| notes（目录条目） | 应用 | github zhaoolee | 1.6.1 | ✅ | ⏳ | 笔记应用（含 dsh-plugin 子目录） | — 目录结构发现 | [reports/zhaoolee-notes.md](reports/zhaoolee-notes.md) |
+| dsh-sgme（目录条目） | 多智能体 | github freehul | 0.1.1 | ✅ | ⏳ | SGME 系统含 dsh 适配器子目录 | — 目录结构发现 | [reports/sgme.md](reports/sgme.md) |
+| pack-agent（目录条目） | 打包 | github sakikoTGW | 0.4.2 | ✅ | ⏳ | 含 dsh-plugin 子目录，主动忽略凭据文件 | — 目录结构发现 | [reports/pack-agent.md](reports/pack-agent.md) |
+| argo-search（目录条目） | 搜索 | github taxueseek | 2.8.0 | ✅ | ⏳ | 搜索系统 + 凭据泄露检测规则 | — 目录结构发现 | [reports/argo.md](reports/argo.md) |
+| dsh-reef（目录条目） | 协作 | github huey1in | 1.5.2 | ✅ | ⏳ | GitHub/GitLab 评审工具 | — 目录结构发现 | [reports/trio.md](reports/trio.md) |
+| dshmarket（目录条目） | 市场 | github dsh-market | 1.10.1 | ✅ | ⏳ | 插件市场（安装/更新/热重载） | — 目录结构发现 | [reports/dsh-market.md](reports/dsh-market.md) |
 
-## 本次未通过 / Failed（31，全部带可复现原因）
+## 本次未通过 / Failed（42，全部带可复现原因）
 
 | 插件 | 来源 | 失败原因（详见报告） | 报告 |
 |---|---|---|---|
@@ -156,12 +181,23 @@
 | dsh-plugin-knowledge-graph | github Luke-Yong | ❌ 同上 | [reports/dsh-plugin-knowledge-graph.md](reports/dsh-plugin-knowledge-graph.md) |
 | dsh-openmaic | github THU-MAIC | ❌ 同上 | [reports/dsh-openmaic.md](reports/dsh-openmaic.md) |
 | dsh-voice-input-plugin | github Zhangbo-cn | ❌ 依赖 `@deepseek-ai/dsh-compact` 未发布（404，官方作用域第四个） | [reports/dsh-voice-input-plugin.md](reports/dsh-voice-input-plugin.md) |
+| dsh-webui-market-plugin | github Sanqi-normal | ❌ 依赖 `@deepseek-ai/dsh-compact` 未发布（404） | [reports/dsh-webui-market-plugin.md](reports/dsh-webui-market-plugin.md) |
+| ui-status-label | github alingalingling | ❌ prepare 与 pnpm 9 workspace 不兼容 | [reports/ui-status-label.md](reports/ui-status-label.md) |
+| dsh-101 | github bill9109 | ❌ 旧 API 依赖（dsh-client-locale ^0.0.1 无匹配） | [reports/dsh-101.md](reports/dsh-101.md) |
+| dsh-calculator | github bobcat848 | ❌ 旧 API 依赖（dsh-client-runtime ^0.0.1 无匹配） | [reports/dsh-calculator.md](reports/dsh-calculator.md) |
+| dsh-news-plugin | github canghai666x | ❌ 依赖 dsh-type-meta 撤包 | [reports/dsh-news-plugin.md](reports/dsh-news-plugin.md) |
+| dsh-learn-everything | github cendaifeng | ❌ prepare 构建失败 | [reports/dsh-learn-everything.md](reports/dsh-learn-everything.md) |
+| dsh-harness-mcp-server | github chushixixin | ❌ 依赖 dsh-type-meta 撤包 | [reports/dsh-harness-mcp-server.md](reports/dsh-harness-mcp-server.md) |
+| dsh-report-studio | github ciceroyang | ❌ 依赖 dsh-type-meta 撤包 | [reports/dsh-report-studio.md](reports/dsh-report-studio.md) |
+| dsh-tool-vision | github gloryxpnv | ❌ 依赖 dsh-type-meta 撤包 | [reports/dsh-tool-vision.md](reports/dsh-tool-vision.md) |
+| dsh-find-plugin | github awesome-dsh-plugin | ❌ 依赖 dsh-type-meta 撤包 | [reports/dsh-find-plugin.md](reports/dsh-find-plugin.md) |
+| deepseek-harness（框架本体） | github deepseek-ai | ❌ 非插件：框架仓库构建需要编译环境（postinstall 失败） | [reports/deepseek-harness-framework.md](reports/deepseek-harness-framework.md) |
 
 **目录失效条目**（社区目录收录但仓库已不存在，API+网页双通道确认，本轮新发现 7 个 `dsh-external/*`）：见 [reports/stale-entries.md](reports/stale-entries.md)。
 
 ## English Summary
 
-- **Coverage**: 109 passed / 31 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
+- **Coverage**: 134 passed / 42 failed (with reproducible causes) — all under DSH 0.1.0-rc.6, batches tested 2026-08-16/17.
 - **Key finding**: 8 plugins from the `omdsh-dev` family + `dsh-turn-navigator`/`dsh-wash-calendar` depend on `@deepseek-ai/dsh-type-meta`, which returns **404 on both registry.npmjs.org and npmmirror** (unpublished) — they cannot install today.
 - **Verdicts are point-in-time snapshots**; see [METHODOLOGY.en.md](../docs/METHODOLOGY.en.md).
 
