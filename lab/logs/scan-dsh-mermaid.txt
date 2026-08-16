@@ -1,0 +1,26 @@
+# 扫描完成: _src/dsh-mermaid
+扫描文件数: 37
+
+## 网络出口 (9 处)
+  - _src/dsh-mermaid/lib/client.js:980
+  - _src/dsh-mermaid/lib/types/client/index.js:67
+  - _src/dsh-mermaid/src/client/index.ts:80
+  - _src/dsh-mermaid/tests/live-server-e2e.spec.ts:13
+  - _src/dsh-mermaid/tests/live-server-e2e.spec.ts:23
+  - _src/dsh-mermaid/tests/live-server-e2e.spec.ts:27
+  - _src/dsh-mermaid/tests/live-server-e2e.spec.ts:31
+  - _src/dsh-mermaid/tests/live-server-e2e.spec.ts:55
+  - _src/dsh-mermaid/tests/live-server-e2e.spec.ts:84
+
+## 混淆线索 (1 处)
+  - _src/dsh-mermaid/lib/types/client/styles.d.ts:21 [超长行 4815 字符]
+
+## 安装钩子 (1 处)
+  - _src/dsh-mermaid/package.json:49
+
+## 文件写入/删除 (3 处)
+  - _src/dsh-mermaid/tests/host.spec.ts:1
+  - _src/dsh-mermaid/tests/host.spec.ts:27
+  - _src/dsh-mermaid/tests/host.spec.ts:37
+
+提醒: 命中 ≠ 恶意，未命中 ≠ 无害。本扫描是线索，不是判决。

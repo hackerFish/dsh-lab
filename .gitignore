@@ -1,0 +1,7 @@
+# 本地测试环境（隔离的 DSH_HOME、测试日志、pnpm store、被克隆的第三方仓库），绝不入库
+.lab-home/
+.lab-logs/
+.pnpm-store/
+_src/
+node_modules/
+.DS_Store

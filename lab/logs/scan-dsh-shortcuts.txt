@@ -1,0 +1,18 @@
+# 扫描完成: _src/dsh-shortcuts
+扫描文件数: 10
+
+## 凭证读取 (6 处)
+  - _src/dsh-shortcuts/README.md:48
+  - _src/dsh-shortcuts/README.md:49
+  - _src/dsh-shortcuts/README.md:52
+  - _src/dsh-shortcuts/README.md:60
+  - _src/dsh-shortcuts/install.sh:12
+  - _src/dsh-shortcuts/install.sh:89
+
+## 网络出口 (1 处)
+  - _src/dsh-shortcuts/lib/client.js:378
+
+## 动态执行 (1 处)
+  - _src/dsh-shortcuts/test/shortcuts.test.cjs:140
+
+提醒: 命中 ≠ 恶意，未命中 ≠ 无害。本扫描是线索，不是判决。

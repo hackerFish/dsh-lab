@@ -1,0 +1,21 @@
+# 扫描完成: .lab-home/profiles/web/node_modules/dsh-global-rules
+扫描文件数: 6
+
+## 凭证读取 (7 处)
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/README.md:5
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/README.md:7
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/README.md:13
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/README.md:36
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/lib/client.js:105
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/lib/index.js:3
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/package.json:4
+
+## 网络出口 (2 处)
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/lib/client.js:55
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/lib/client.js:77
+
+## 文件写入/删除 (2 处)
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/lib/index.js:5
+  - .lab-home/profiles/web/node_modules/dsh-global-rules/lib/index.js:79
+
+提醒: 命中 ≠ 恶意，未命中 ≠ 无害。本扫描是线索，不是判决。
